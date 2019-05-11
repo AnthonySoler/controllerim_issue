@@ -36,7 +36,7 @@ ApplicationController
 ## First analysis
 
 Controllerim uses `constructor.name` as key for controllers.
-In this example, after the concatenation, the controllerName value is equal to "t" for every controller.
+In this example, after the minification process, the controllerName value is equal to "t" for every controller.
 
 So in the MenuComponent, the `this.controller.getParentController(HeaderController.name)` is equivalent to  `this.controller.getParentController('t')`.
 In the `getControllerFromContext` function of controllerim, this name is used to find the related controller and return the first one which match this name.
